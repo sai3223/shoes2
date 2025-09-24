@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>StepUp Shoes – Premium Footwear</title>
+  <style>
+    body{margin:0;font-family:Arial;background:#0b0f14;color:#e6eef6;text-align:center}
+    header,footer{padding:20px;background:#111a24}
+    h1{margin:0;font-size:24px}
+    .products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;padding:20px}
+    .card{background:#1a2430;padding:16px;border-radius:10px;box-shadow:0 4px 12px rgba(0,212,255,0.2)}
+    .product-img{height:120px;background:linear-gradient(135deg,#7c4dff,#00d4ff);border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:bold}
+    .btn{padding:10px 16px;border-radius:8px;border:none;cursor:pointer;font-weight:bold;margin-top:10px}
+    .btn-primary{background:linear-gradient(90deg,#00d4ff,#7c4dff);color:#061018;box-shadow:0 4px 14px rgba(124,77,255,0.3)}
+    .btn-primary:hover{opacity:0.9}
+    footer{font-size:14px;color:#aaa}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>StepUp Shoes</h1>
+    <p>Premium Footwear for Every Occasion</p>
+  </header>
+
+  <main>
+    <h2>Our Collection</h2>
+    <div class="products">
+      <div class="card">
+        <div class="product-img">Sneaker X</div>
+        <h3>Sneaker X</h3>
+        <p>₹3,999</p>
+        <button class="btn btn-primary" onclick="location.href='checkout.html'">Buy Now</button>
+      </div>
+      <div class="card">
+        <div class="product-img">Classic Runner</div>
+        <h3>Classic Runner</h3>
+        <p>₹2,499</p>
+        <button class="btn btn-primary" onclick="location.href='checkout.html'">Buy Now</button>
+      </div>
+      <div class="card">
+        <div class="product-img">Urban Loafers</div>
+        <h3>Urban Loafers</h3>
+        <p>₹2,999</p>
+        <button class="btn btn-primary" onclick="location.href='checkout.html'">Buy Now</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 StepUp Shoes — All rights reserved.
+  </footer>
+</body>
+</html>
