@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Checkout - StepUp Shoes</title>
+  <style>
+    body{font-family:Arial;background:#0b0f14;color:#e6eef6;text-align:center;padding:20px}
+    form{max-width:400px;margin:auto;background:#1a2430;padding:20px;border-radius:10px;box-shadow:0 4px 14px rgba(0,212,255,0.2);text-align:left}
+    label{display:block;margin-top:10px}
+    input,button{width:100%;padding:10px;margin-top:6px;border-radius:6px;border:1px solid #333}
+    button{background:linear-gradient(90deg,#00d4ff,#7c4dff);color:#061018;font-weight:bold;cursor:pointer;margin-top:20px}
+    button:hover{opacity:0.9}
+    a{color:#00d4ff;text-decoration:none;display:block;margin-top:15px;text-align:center}
+  </style>
+</head>
+<body>
+  <h2>Checkout</h2>
+  <form onsubmit="event.preventDefault();location.href='thankyou.html'">
+    <label>Name</label>
+    <input type="text" required>
+    <label>Email</label>
+    <input type="email" required>
+    <label>Shipping Address</label>
+    <input type="text" required>
+    <label>Phone</label>
+    <input type="tel" required>
+    <button type="submit">Place Order</button>
+  </form>
+  <a href="index.html">← Back to Products</a>
+</body>
+</html>
