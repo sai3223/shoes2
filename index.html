@@ -1,14 +1,6 @@
 <!doctype html>
 <html lang="en">
 <head>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MCSS5N8F');</script>
-<!-- End Google Tag Manager -->
-</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>StepUp Shoes – Premium Footwear</title>
@@ -23,13 +15,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .btn-primary{background:linear-gradient(90deg,#00d4ff,#7c4dff);color:#061018;box-shadow:0 4px 14px rgba(124,77,255,0.3)}
     .btn-primary:hover{opacity:0.9}
     footer{font-size:14px;color:#aaa}
+    /* Form styling */
+    .contact-section{padding:40px;background:#111a24}
+    form{max-width:500px;margin:auto;background:#1a2430;padding:20px;border-radius:10px;box-shadow:0 4px 12px rgba(0,212,255,0.2);text-align:left}
+    label{display:block;margin-top:10px;font-weight:bold}
+    input,textarea,button{width:100%;padding:10px;margin-top:6px;border-radius:6px;border:1px solid #333}
+    textarea{resize:none;height:100px}
+    button{background:linear-gradient(90deg,#00d4ff,#7c4dff);color:#061018;font-weight:bold;cursor:pointer;margin-top:15px}
+    button:hover{opacity:0.9}
   </style>
 </head>
 <body>
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCSS5N8F"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
   <header>
     <h1>StepUp Shoes</h1>
     <p>Premium Footwear for Every Occasion</p>
@@ -93,6 +89,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <button class="btn btn-primary" onclick="location.href='checkout.html'">Buy Now</button>
       </div>
     </div>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+      <h2>Get in Touch</h2>
+      <p>Have questions or want updates? Fill the form below.</p>
+      <form onsubmit="event.preventDefault();alert('Form submitted successfully!');">
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+        <label for="message">Message</label>
+        <textarea id="message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
   </main>
 
   <footer>
